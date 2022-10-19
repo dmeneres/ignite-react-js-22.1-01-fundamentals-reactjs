@@ -26,7 +26,7 @@ export function Comment({ content, onDeleteComment }) {
           <header>
             <div className={styles.authorAndTime}>
               <strong>Diogo Menéres</strong>
-              <time title="11 de Maio às 08:13h" dateTime="2022-05-11 08:13:00">Cerca de 1h atrás</time>
+              <time title="11 de Maio às 08:13h" dateTime="2022-05-11 08:13:00">About 1h ago</time>
             </div>
 
             <button onClick={handleDeleteComment} title="Deletar comentário">
@@ -40,7 +40,7 @@ export function Comment({ content, onDeleteComment }) {
         <footer>
           <button onClick={handleLikeComment} >
             <ThumbsUp />
-            Aplaudir <span>{likeCount}</span>
+            Applaud <span>{likeCount}</span>
           </button>
         </footer>
       </div>

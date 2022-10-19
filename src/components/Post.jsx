@@ -4,22 +4,22 @@ import { Comment } from './Comment';
 import styles from './Post.module.css';
 
 import { format, formatDistanceToNow } from 'date-fns'
-import pt from 'date-fns/locale/pt'
+import en from 'date-fns/locale/en-US'
 import { useState } from 'react';
 
 export function Post({ author, publishedAt, content }) {
   const [comments, setComments] = useState([
-    'Post MOOOITO bom'
+    'Generic Comment'
   ])
 
   const [newCommentText, setNewCommentText] = useState('')
 
-  const publishedDateFormatted = format(publishedAt, "d 'de' LLLL 'às' HH:mm", {
-    locale: pt
+  const publishedDateFormatted = format(publishedAt, "LLLL do 'at' HH:mm", {
+    locale: en,
   })
 
   const publishedDateRelativeToNow = formatDistanceToNow(publishedAt, {
-    locale: pt,
+    locale: en,
     addSuffix: true
   })
 
@@ -36,7 +36,7 @@ export function Post({ author, publishedAt, content }) {
   }
 
   function handleNewCommentInvalid() {
-    event.target.setCustomValidity('Esse campo é obrigatório!');
+    event.target.setCustomValidity('This field is mandatory');
   }
 
   function deleteComment(commentToDelete) {
@@ -70,17 +70,17 @@ export function Post({ author, publishedAt, content }) {
           } else if (line.type === 'link') {
             return (
               <p key={line.content} >
-                <a href="#">{line.content}</a>
+                <a href={line.content}>{line.slug}</a>
               </p>
             );
           }
         })}
       </div>
       <form onSubmit={handleCreateNewComment} className={styles.commentForm}>
-        <strong>Deixe seu feedback</strong>
+        <strong>Feedback</strong>
         <textarea
           name="comment"
-          placeholder="Deixe um comentário"
+          placeholder="Leave a comment"
           value={newCommentText}
           onChange={handleNewCommentChange}
           onInvalid={handleNewCommentInvalid}

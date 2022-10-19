@@ -14,9 +14,9 @@ const posts = [
       role: 'Student @ Rocketseat'
     },
     content: [
-      { type: 'paragraph', content: 'Fala galeraa 👋' },
-      { type: 'paragraph', content: 'Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀' },
-      { type: 'link', content: 'jane.design/doctorcare' },
+      { type: 'paragraph', content: 'Microsoft Edge (previously known as Project Spartan) is the new name of Internet Explorer.' },
+      { type: 'paragraph', content: 'This is the first version of Edge with features that closely resemble IE11.' },
+      { type: 'link', content: 'https://www.microsoft.com/en-us/edge?form=MA13FJ', slug: 'Microsoft Edge' },
     ],
     publishedAt: new Date('2022-05-03 20:00:00')
   },
@@ -28,9 +28,9 @@ const posts = [
       role: 'Educator @ Rocketseat'
     },
     content: [
-      { type: 'paragraph', content: 'Fala galeraa 👋' },
-      { type: 'paragraph', content: 'Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀' },
-      { type: 'link', content: '<a href="">jane.design/doctorcare</a>' },
+      { type: 'paragraph', content: 'Brave is a new browser that protects you from targeted ads and trackers.' },
+      { type: 'paragraph', content: 'Brave takes the best of the open web and gives you control over your privacy.' },
+      { type: 'link', content: 'https://brave.com/', slug: 'Brave Browser' },
     ],
     publishedAt: new Date('2022-05-10 20:00:00')
   },
