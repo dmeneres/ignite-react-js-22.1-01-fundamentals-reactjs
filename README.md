@@ -3,6 +3,6 @@
 
 This application was developed in classes on Rocketseat and consists of a 'social network' vibe letting you comment on posts and applaud (leaving a like).
 
-For a detailed explanation go to <a href="https://github.com/dmeneres/ignite22.1-01-fundamentals-reactjs-ts">01 - React Fundamentals w/ Typescript</a>.
+For more details go to <a href="https://github.com/dmeneres/ignite22.1-01-fundamentals-reactjs-ts">01 - React Fundamentals w/ Typescript</a>.
 
 To run this project: "npm i" and then "npm run dev".
